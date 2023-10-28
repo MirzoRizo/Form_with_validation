@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: inter;
+  font-size: 1rem;
+}
+
+.board {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 124, 117);
+}
+
+.form-validation {
+  width: 20rem;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+
+.form-validation label {
+  font-size: 0.85rem;
+}
+.form-validation input {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 2px solid gray;
+}
+.form-validation button {
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 2px solid gray;
+  margin-top: 1rem;
+  background-color: rgb(37, 231, 183);
+}
+
+.form-validation button:hover {
+  background-color: rgb(0, 255, 242);
+  cursor: pointer;
+}
+
+.label-span {
+  color: red;
+}
+
+.form-validation input:focus {
+  outline: transparent;
+}
+
+.form-validation input:not(:placeholder-shown):not(:focus):valid {
+  border-color: green;
+  background-color: rgba(0, 128, 0, 0.125);
+}
+.form-validation input:not(:placeholder-shown):not(:focus):invalid {
+  border-color: red;
+  /* animation: shake 0.15s ease-in-out 0s 2; */
+  background-color: rgba(128, 0, 0, 0.125);
+}
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+.form-validation select {
+  width: 100%;
+  padding: 0.3rem;
+  border: 2px solid gray;
+  border-radius: 0.3rem;
+}
