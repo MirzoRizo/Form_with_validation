@@ -58,11 +58,11 @@
   outline: transparent;
 }
 
-.form-validation input:not(:placeholder-shown):not(:focus):valid {
+.form-validation input:not(:placeholder-shown):valid {
   border-color: green;
   background-color: rgba(0, 128, 0, 0.125);
 }
-.form-validation input:not(:placeholder-shown):not(:focus):invalid {
+.form-validation input:not(:placeholder-shown):invalid {
   border-color: red;
   /* animation: shake 0.15s ease-in-out 0s 2; */
   background-color: rgba(128, 0, 0, 0.125);
