@@ -30,7 +30,7 @@ inputs.forEach((input) => {
   });
 });
 
-function conPassword() {
+function confPassword() {
   if (password.value !== confirmPassword.value) {
     confirmPassword.setCustomValidity('Passwords do not match');
   } else {
@@ -39,7 +39,7 @@ function conPassword() {
 }
 
 confirmPassword.addEventListener('input', () => {
-  conPassword();
+  confPassword();
 });
 
 function checkZIP() {
@@ -85,8 +85,8 @@ window.onload = () => {
   document.getElementById('ZIP').oninput = checkZIP;
 };
 
-const form = document.getElementById('form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  window.location.href = '/welcome.html';
-});
+// const form = document.getElementById('form');
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   // window.location.href = '/welcome.html';
+// });
